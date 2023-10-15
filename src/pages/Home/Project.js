@@ -29,10 +29,10 @@ const Project = ({ project, setModalProject }) => {
         <p className="font-thin text-sm md:text-md">
           <strong>Technologies used:</strong> {tech.slice(0, 30)}
           <label htmlFor="project" onClick={() => setModalProject(project)}>
-            ...see details
+            ..see details
           </label>
         </p>
-        <div className="card- justify-center py-2">
+        <div className="card- justify-center py-3">
           <label
             htmlFor="project"
             className="btn btn-primary btn-outline btn-sm w-7/12 rounded-none bg-neutral-100 px-5 py-2 border-slate-600 border  hover:shadow-[inset_20rem_0_0_0] hover:shadow-green-700  transition-[color,box-shadow]"
