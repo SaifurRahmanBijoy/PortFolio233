@@ -38,7 +38,7 @@ const Home = () => {
                 id="Saif"
                 className="text-3xl md:text-5xl lg:text-6xl font-mono bg-gradient-to-l bg-clip-text text-transparent from-green-600 via-green-100 to-slate-50 animate-text"
               >
-                Saifur Rahman
+                Saifur Rahman 
               </span>
             </h1>
             <h3 className="font-thin text-2xl">Front-end Web Developer</h3>
