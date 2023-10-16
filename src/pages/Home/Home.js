@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import img3 from "../../Utilities/img/img3.jpg";
-// import resume from "../../Utilities/Old_Resume.pdf";
-// import resume from "../../Utilities/CV.pdf";
 import resume from "../../Utilities/Resume.pdf";
 import ProjectModal from "./ProjectModal/ProjectModal";
 import PrimaryButton from "../PrimaryButton";
@@ -46,7 +44,10 @@ const Home = () => {
             <h3 className="font-thin text-2xl">Front-end Web Developer</h3>
             <div className="my-3">
               <PrimaryButton>
-                <a href={resume} download="Resume.pdf">
+                <a
+                  href={resume}
+                  download="Resume of Saifur Rahman-BSc in CSE.pdf"
+                >
                   Download Resume
                 </a>
               </PrimaryButton>
@@ -57,7 +58,7 @@ const Home = () => {
       <div className="py-10 mx-auto" data-aos="fade-in">
         <h2
           onClick={() => setProjectsStats(!projectsStats)}
-          className="p-2 uppercase text-2xl my-5 font-serif bg-black rounded text-center w-7/12 mx-auto hover:cursor-pointer"
+          className="p-2 uppercase text-2xl my-5 font-serif bg-black hover:bg-zinc-900 hover:border-slate-700 hover:border rounded text-center w-7/12 mx-auto hover:cursor-pointer"
         >
           Projects
         </h2>

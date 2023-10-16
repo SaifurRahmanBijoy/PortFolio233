@@ -10,8 +10,11 @@ const AboutMe = () => {
       <div className="container px-5 py-24 mx-auto flex flex-col items-center justify-center min-h-screen">
         <div className="xl:w-5/12 lg:w-3/4 w-full mx-auto text-center">
           <p className="leading-relaxed text-sm md:text-xl text-justify lg:text-center mb-4">
-            Experienced as a web developer with an excellent understanding of
-            front-end technologies and knowledge of MongoDB with Back-end.{" "}
+            I hold a BSc in Computer Science and Engineering, offering a strong
+            educational foundation. Proficient in diverse front-end technologies
+            and MongoDB for back- end solutions, I'm ready to contribute
+            effectively to dynamic teams, prioritizing excellence and
+            innovation.
           </p>
           <p className="leading-relaxed text-sm md:text-xl text-justify lg:text-center">
             I know some technologies of web development such as HTML, CSS,
