@@ -33,7 +33,7 @@ const Project = ({ project, setModalProject }) => {
         <div className="card- justify-center py-2">
           <label
             htmlFor="project"
-            className="btn btn-primary btn-outline btn-sm w-7/12 rounded-none bg-neutral-100 px-5 py-2 border-slate-600 border  hover:shadow-[inset_20rem_0_0_0] hover:shadow-green-700  transition-[color,box-shadow]"
+            className="bg-zinc-900 btn rounded w-7/12 px-5 py-1 border-slate-600 border text-slate-200 hover:text-white hover:shadow-[inset_80rem_0_0_0] hover:shadow-green-400 duration-[900ms,700ms] transition-[color,box-shadow]"
             onClick={() => setModalProject(project)}
           >
             Details

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import img3 from "../../Utilities/img/img3.jpg";
-import resume from "../../Utilities/Saifur_Rahman_Resume_11-12-2022-20-38-47.pdf";
+// import resume from "../../Utilities/Old_Resume.pdf";
+// import resume from "../../Utilities/CV.pdf";
+import resume from "../../Utilities/Resume.pdf";
 import ProjectModal from "./ProjectModal/ProjectModal";
 import PrimaryButton from "../PrimaryButton";
 import Footer from "./Footer";
