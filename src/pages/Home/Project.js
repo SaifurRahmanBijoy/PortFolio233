@@ -11,7 +11,7 @@ const Project = ({ project, setModalProject }) => {
   }, []);
   return (
     <div
-      className="card rounded-full bg-black shadow-2xl hover:bg-slate-900 hover:border hover:border-slate-700 my-4 md:my-8 lg:my-16"
+      className="card rounded-full bg-black shadow-2xl hover:bg-slate-900 my-4 md:my-8 lg:my-16"
       data-aos="zoom-in"
     >
       <div className="new">
@@ -23,13 +23,11 @@ const Project = ({ project, setModalProject }) => {
         />
       </div>
       <div className="card-body text-center">
-        <h2 className="card- text-2xl md:text-2xl text-center text-bold">
-          {name}
-        </h2>
+        <h2 className="text-2xl md:text-2xl text-center text-bold">{name}</h2>
         <p className="font-thin text-sm md:text-md">
-          <strong>Technologies used:</strong> {tech.slice(0, 30)}
+          <strong>Technologies used:</strong> {tech.slice(0, 50)}
           <label htmlFor="project" onClick={() => setModalProject(project)}>
-            ..see details
+            ...
           </label>
         </p>
         <div className="card- justify-center py-2">
