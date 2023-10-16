@@ -1,62 +1,82 @@
-import React from "react";
-import { Link } from "react-router-dom";
-// import { SiMinutemailer, SiAboutdotme, SiBloglovin } from "react-icons/si";
-// import { AiFillHome } from "react-icons/ai";
-import mail from "../../Utilities/mail.svg";
-import about from "../../Utilities/about.svg";
-import blog from "../../Utilities/blog.svg";
-import home from "../../Utilities/home.svg";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const menuItems = (
-    <>
-      <li className="hover:text-green-400">
-        <Link to="/">
-          <span className="md:hidden">
-            <img className="w-5" src={home} alt="" />
-          </span>
-          <span className="hidden md:flex">Home</span>
-        </Link>
-      </li>
-      <li className="hover:text-green-400">
-        <Link to="/blogs">
-          <span className="md:hidden text-md">
-            <img className="w-5" src={blog} alt="" />
-          </span>
-          <span className="hidden md:flex">Blogs</span>
-        </Link>
-      </li>
-      <li className="hover:text-green-400">
-        <Link to="/about">
-          <span className="md:hidden text-2xl">
-            <img className="w-6" src={about} alt="" />
-          </span>
-          <span className="hidden md:flex">About Me</span>
-        </Link>
-      </li>
-      <li className="hover:text-green-400">
-        <a href="https://form.jotform.com/223435153371046">
-          <span className="md:hidden">
-            <img className="w-6" src={mail} alt="" />
-          </span>
-          <span className="hidden md:flex">Contact Me</span>
-        </a>
-      </li>
-    </>
-  );
+  const [nav, setNav] = useState(false);
+  const menus = [
+    {
+      id: 1,
+      link: "Home",
+    },
+    {
+      id: 2,
+      link: "About",
+    },
+    {
+      id: 3,
+      link: "Projects",
+    },
+    {
+      id: 4,
+      link: "Experience",
+    },
+    // {
+    //   id: 5,
+    //   link: "Blogs",
+    // },
+    {
+      id: 6,
+      link: "Contact",
+    },
+  ];
+
   return (
-    <div className="navbar lg:justify-between justify-between items-center">
+    <div className="navbar flex justify-between items-center fixed px-8">
       <Link
         to="/"
-        className="text-3xl lg:navbar-start  lg:flex font-bold font-signature"
+        className="cursor-pointer text-3xl lg:flex font-bold font-signature"
       >
         <span className="text-green-400">Saifur</span>
       </Link>
-      <div className="">
-        <ul className="menu menu-compact menu-horizontal uppercase text-slate-300">
-          {menuItems}
-        </ul>
+
+      <ul className="hidden md:flex">
+        {menus.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200 text-slate-300"
+          >
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer px-4 z-10 md:hidden"
+      >
+        {nav ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>
+      {nav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-screen h-screen bg-gradient-to-b from-black to-slate-900">
+          {menus.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200"
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

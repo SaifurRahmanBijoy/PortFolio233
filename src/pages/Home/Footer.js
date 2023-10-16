@@ -1,60 +1,116 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
-import { SiGithub, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiGithub, SiInstagram, SiWhatsapp } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsPerson } from "react-icons/bs";
 
 const Footer = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          LinkedIn
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/saifur-rahman-2a8bb0240/",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          GitHub
+          <SiGithub size={30} />
+        </>
+      ),
+      href: "https://www.github.com/SaifurRahmanBijoy/",
+      style: "",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          WhatsApp
+          <SiWhatsapp size={30} />
+        </>
+      ),
+      href: "https://wa.me/8801859401509?text=Hello!",
+      style: "",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          Facebook
+          <AiFillFacebook size={30} />
+        </>
+      ),
+      href: "https://www.facebook.com/b1joy/",
+      style: "",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          Instagram
+          <SiInstagram size={30} />
+        </>
+      ),
+      href: "https://www.instagram.com/bi_j_oy/",
+      style: "",
+    },
+    {
+      id: 6,
+      child: (
+        <>
+          Mail
+          <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:saifur.rahman6810@gmail.com",
+      style: "",
+    },
+    {
+      id: 7,
+      child: (
+        <>
+          Resume
+          <BsPerson size={30} />
+        </>
+      ),
+      href: "/Resume.pdf",
+      style: "rounded-br-md ",
+      download: true,
+    },
+  ];
   return (
-    <footer className="bg-gray-800 bg-opacity-25 py-4 w-11/12 mx-auto rounded-t-2xl">
-      <div className="max-w-screen px-4 mx-auto">
-        <span
-          className="hidden md:flex text-sm justify-center pb-3 font-mono bg-gradient-to-l bg-clip-text text-transparent from-green-600 via-green-100 to-slate-50 animate-text"
-        >
-          Saifur Rahman
-        </span>
-        <div className="flex w-9/12 md:w-7/12 lg:w-5/12 mx-auto items-center justify-between">
-          <a
-            href="https://www.facebook.com/b1joy/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 transition-colors duration-300 hover:text-green-400"
+    <div className="flex flex-col top-[25%] left-0 fixed">
+      <ul>
+        {links.map(({ id, child, href, style, download }) => (
+          <li
+            className={
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-900" +
+              " " +
+              style
+            }
           >
-            <AiFillFacebook></AiFillFacebook>
-          </a>
-          <a
-            href="https://www.instagram.com/bi_j_oy/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 transition-colors duration-300 hover:text-green-400"
-          >
-            <SiInstagram></SiInstagram>
-          </a>
-          <a
-            href="https://www.github.com/SaifurRahmanBijoy/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 transition-colors duration-300 hover:text-green-400"
-          >
-            <SiGithub></SiGithub>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/saifur-rahman-2a8bb0240/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 transition-colors duration-300 hover:text-green-400"
-          >
-            <SiLinkedin></SiLinkedin>
-          </a>
-          <a
-            href="https://wa.me/8801859401509?text=Hello!"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-400 transition-colors duration-300 hover:text-green-400"
-          >
-            <SiWhatsapp></SiWhatsapp>
-          </a>
-        </div>
-      </div>
-    </footer>
+            <a
+              className="flex justify-between items-center w-full text-white"
+              href={href}
+              download={download}
+              target="_blank"
+              rel="noreferrer"
+              key={id}
+            >
+              {child}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

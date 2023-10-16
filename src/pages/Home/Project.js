@@ -1,44 +1,44 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Project.css";
 
 const Project = ({ project, setModalProject }) => {
-  const { name, tech, img1 } = project;
+  const { live, client, img1, id } = project;
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   return (
     <div
-      className="card rounded-full bg-black shadow-2xl hover:bg-slate-900 my-4 md:my-8 lg:my-16"
-      data-aos="zoom-in"
+      key={id}
+      className="shadow-md shadow-gray-600 rounded-lg max-w-screen my-3 md:my-6 lg:mx-2"
     >
-      <div className="new">
-        <img
-          id="box"
-          className="shadow-xl rounded-lg w-9/12 mx-auto"
-          src={img1}
-          alt=""
-        />
-      </div>
-      <div className="card-body text-center">
-        <h2 className="text-2xl md:text-2xl text-center text-bold">{name}</h2>
-        <p className="font-thin text-sm md:text-md">
-          <strong>Technologies used:</strong> {tech.slice(0, 50)}
-          <label htmlFor="project" onClick={() => setModalProject(project)}>
-            ...
-          </label>
-        </p>
-        <div className="card- justify-center py-2">
-          <label
-            htmlFor="project"
-            className="bg-zinc-900 btn rounded w-7/12 px-5 py-1 border-slate-600 border text-slate-200 hover:text-white hover:shadow-[inset_80rem_0_0_0] hover:shadow-green-400 duration-[900ms,700ms] transition-[color,box-shadow]"
-            onClick={() => setModalProject(project)}
-          >
-            Details
-          </label>
-        </div>
+      <img
+        src={img1}
+        alt=""
+        className="rounded-md duration-200 hover:scale-105"
+      />
+      <div className="flex items-center justify-center">
+        <a
+          href={live}
+          className="sm:px-2 md:px-6 py-3 m-4 text-center hover:scale-105 text-slate-200 hover:text-white duration-200"
+        >
+          Demo
+        </a>
+        <a
+          href={client}
+          className="sm:px-2 md:px-6 py-3 m-4 text-center hover:scale-105 text-slate-200 hover:text-white duration-200"
+        >
+          Code
+        </a>
+        <label
+          htmlFor="project"
+          className="sm:px-2 md:px-6 py-3 m-4 text-center hover:scale-105 text-slate-200 hover:text-white duration-200"
+          onClick={() => setModalProject(project)}
+        >
+          Details
+        </label>
       </div>
     </div>
   );
