@@ -37,7 +37,7 @@ const Home = () => {
       >
         <div className="min-h-screen bg-cover bg-gradient-to-b from-black to bg-slate-900 bg-opacity-80">
           <div className="md:min-h-screen py-20 md:py-0 w-7/12 max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center ">
-            <div className="flex flex-col justify-center">
+            <div className="my-5 md:my-0 flex flex-col justify-center">
               <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl font-mono inline-block">
                 I'm a Front-end Web Developer
               </h1>
@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                className="rounded-2xl mx-0 w-full md:mx-auto sm:w-3/4 md:w-2/3"
+                className="rounded-2xl mx-0 w-full my-6 md:my-0 md:mx-auto sm:w-3/4 md:w-2/3"
                 src={img2}
                 alt=""
               />
