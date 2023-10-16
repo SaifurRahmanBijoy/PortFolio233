@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 const ProjectModal = ({ modalProject, setModalProject }) => {
   const { name, tech, img1, img2, img3, img4, features, live, server, client } =
@@ -14,19 +15,21 @@ const ProjectModal = ({ modalProject, setModalProject }) => {
           >
             ✕
           </label>
-          <h3 className="font-bold text-2xl md:text-3xl" >{name}</h3>
+          <h3 className="font-bold text-2xl md:text-3xl">{name}</h3>
           <h3 className="font-thin text-md mt-3">Screenshots:</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3">
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
+          <div className="grid grid-cols-1 gap-3 mb-3">
+            <img className="box" src={img1} alt="" />
+            <img className="box" src={img2} alt="" />
+            <img className="box" src={img3} alt="" />
+            <img className="box" src={img4} alt="" />
           </div>
           <div className="my-3">
             <h3 className="font-thin text-md">Features:</h3>
             <ol>
               {features.map((f, i) => (
-                <li key={i} data-aos="fade-down-left">◉ {f}</li>
+                <li key={i} data-aos="fade-down-left">
+                  ◉ {f}
+                </li>
               ))}
             </ol>
           </div>
@@ -34,7 +37,9 @@ const ProjectModal = ({ modalProject, setModalProject }) => {
             <h3 className="font-thin text-md">
               Technologies used in this project:
             </h3>
-            <p className="mb-4" data-aos="fade-down">◉ {tech}</p>
+            <p className="mb-4" data-aos="fade-down">
+              ◉ {tech}
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               <a
                 className="btn btn-xs btn-outline btn-info rounded"
@@ -45,7 +50,7 @@ const ProjectModal = ({ modalProject, setModalProject }) => {
                 Live Website
               </a>
               <a
-                className="btn btn-xs btn-outline btn-primary rounded"
+                className="btn btn-xs btn-outline rounded"
                 href={server}
                 target="_blank"
                 rel="noreferrer"
