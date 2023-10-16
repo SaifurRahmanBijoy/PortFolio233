@@ -45,12 +45,12 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar lg:justify-between justify-center items-center">
+    <div className="navbar lg:justify-between justify-between items-center">
       <Link
         to="/"
-        className="text-3xl lg:navbar-start hidden lg:flex font-bold"
+        className="text-3xl lg:navbar-start  lg:flex font-bold font-signature"
       >
-        Port<span className="text-green-400">folio</span>
+        <span className="text-green-400">Saifur</span>
       </Link>
       <div className="">
         <ul className="menu menu-compact menu-horizontal uppercase text-slate-300">
