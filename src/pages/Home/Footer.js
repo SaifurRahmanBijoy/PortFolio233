@@ -16,7 +16,7 @@ const Footer = () => {
         </>
       ),
       href: "https://www.linkedin.com/in/saifur-rahman-2a8bb0240/",
-      style: "rounded-tr-md",
+      style: "rounded-tr-md bg-blue-900",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Footer = () => {
         </>
       ),
       href: "https://www.github.com/SaifurRahmanBijoy/",
-      style: "",
+      style: "bg-slate-900",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ const Footer = () => {
         </>
       ),
       href: "https://wa.me/8801859401509?text=Hello!",
-      style: "",
+      style: "bg-green-500",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const Footer = () => {
         </>
       ),
       href: "https://www.facebook.com/b1joy/",
-      style: "",
+      style: "bg-blue-900",
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ const Footer = () => {
         </>
       ),
       href: "https://www.instagram.com/bi_j_oy/",
-      style: "",
+      style: "bg-pink-700",
     },
     {
       id: 6,
@@ -71,7 +71,7 @@ const Footer = () => {
         </>
       ),
       href: "mailto:saifur.rahman6810@gmail.com",
-      style: "",
+      style: "bg-gray-700",
     },
     {
       id: 7,
@@ -82,7 +82,7 @@ const Footer = () => {
         </>
       ),
       href: "/Resume.pdf",
-      style: "rounded-br-md ",
+      style: "rounded-br-md bg-slate-500",
       download: true,
     },
   ];
@@ -92,7 +92,7 @@ const Footer = () => {
         {links.map(({ id, child, href, style, download }) => (
           <li
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-900" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" +
               " " +
               style
             }
