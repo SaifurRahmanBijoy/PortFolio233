@@ -6,6 +6,9 @@ import javascript from "../../assets/javascript.png";
 import reactImage from "../../assets/react.png";
 import github from "../../assets/github.png";
 import tailwind from "../../assets/tailwind.png";
+import bootstrap from "../../assets/bootstrap.png";
+import daisy from "../../assets/daisy.png";
+import ml from "../../assets/ml.png";
 
 const Experience = () => {
   const techs = [
@@ -40,10 +43,22 @@ const Experience = () => {
       style: "shadow-sky-400",
     },
     {
+      id: 6,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-400",
+    },
+    {
       id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 8,
+      src: daisy,
+      title: "daisyUI",
+      style: "shadow-green-400",
     },
   ];
 
