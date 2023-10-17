@@ -13,7 +13,6 @@ import AboutMe from "../AboutMe/AboutMe";
 import Experience from "./Experience";
 import Contact from "./Contact";
 
-
 const Home = () => {
   const [projects, setProjects] = useState([]);
   const [modalProject, setModalProject] = useState(null);
@@ -36,28 +35,30 @@ const Home = () => {
         name="Home"
       >
         <div className="min-h-screen bg-cover bg-gradient-to-b from-black to bg-slate-900 bg-opacity-80">
-          <div className="md:min-h-screen py-20 md:py-0 w-7/12 max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center ">
-            <div className="my-5 md:my-0 flex flex-col justify-center">
-              <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl font-mono inline-block">
-                I'm a Front-end Web Developer
-              </h1>
-              <p className="text-sm sm:text-md my-1 max-w-md">
-                I hold a BSc in Computer Science and Engineering, offering a
-                strong educational foundation. Proficient in diverse front-end
-                technologies and MongoDB for back- end solutions.
-              </p>
-              <div className="my-2 md:my-1">
-                <PrimaryButton>
-                  Projects
-                  <span className="group-hover:rotate-90 duration-300 ">
-                    <MdOutlineKeyboardArrowRight size={25} />
-                  </span>
-                </PrimaryButton>
+          <div className="md:min-h-screen py-20 md:py-0 w-7/12 max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
+            <div className="flex justify-center items-center">
+              <div className="my-5 md:my-0 flex flex-col justify-center">
+                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl inline-block">
+                  I'm a Front-end Web Developer
+                </h1>
+                <p className="text-sm sm:text-md lg:text-lg my-1 max-w-md">
+                  I hold a BSc in Computer Science and Engineering, offering a
+                  strong educational foundation. Proficient in diverse front-end
+                  technologies and MongoDB for back- end solutions.
+                </p>
+                <div className="my-2 md:my-1">
+                  <PrimaryButton>
+                    Projects
+                    <span className="group-hover:rotate-90 duration-300 ">
+                      <MdOutlineKeyboardArrowRight size={25} />
+                    </span>
+                  </PrimaryButton>
+                </div>
               </div>
             </div>
-            <div>
+            <div className="">
               <img
-                className="rounded-2xl mx-0 w-full my-6 md:my-0 md:mx-auto sm:w-3/4 md:w-2/3"
+                className="rounded-2xl mx-0 w-full md:my-0 md:mx-auto sm:w-3/4 md:w-2/3"
                 src={img2}
                 alt=""
               />
@@ -77,7 +78,7 @@ const Home = () => {
       >
         <h2
           onClick={() => setProjectsStats(!projectsStats)}
-          className="text-start text-xl md:text-2xl lg:text-4xl border-b-4 inline border-gray-600"
+          className="text-start text-white text-xl md:text-2xl lg:text-4xl border-b-4 inline border-gray-600"
         >
           Projects
         </h2>

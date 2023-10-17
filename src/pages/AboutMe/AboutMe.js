@@ -2,12 +2,18 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section name="About" className="text-gray-400 min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950 bg-opacity-20">
+    <section
+      name="About"
+      className="text-gray-400 min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950 bg-opacity-20"
+    >
       <div className="container px-5 py-24 mx-auto flex flex-col items-center justify-center min-h-screen">
         <div className="w-9/12 md:w-3/4 mx-auto text-start">
           <h1 className="text-xl md:text-2xl lg:text-4xl inline border-b-4 border-gray-600">
             About
           </h1>
+          <p className="leading-relaxed italic text-md md:text-xl lg:text-2xl text-start mt-2 mb-3">
+            My name is Saifur Rahman
+          </p>
           <p className="leading-relaxed text-sm md:text-xl text-start my-4">
             I hold a BSc in Computer Science and Engineering, offering a strong
             educational foundation. Proficient in diverse front-end technologies

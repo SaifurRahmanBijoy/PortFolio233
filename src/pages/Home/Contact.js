@@ -21,22 +21,22 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="p-2 bg-gray-400 hover:bg-black bg-opacity-20 border-2 rounded-md text-white focus:outline-none"
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Enter your email"
-                className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="my-4 p-2 bg-gray-400 hover:bg-black bg-opacity-20 border-2 rounded-md text-white focus:outline-none"
               />
               <textarea
                 name="message"
                 placeholder="Enter your message"
                 rows="10"
-                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                className="p-2 bg-gray-400 hover:bg-black bg-opacity-20 border-2 rounded-md text-white focus:outline-none"
               ></textarea>
 
-              <button className="btn my-3 border-slate-600 bg-green-950 hover:bg-green-500 shadow-[0_5px_0_rgb(26,251,131,0.3)] hover:shadow-[0_1px_0px_rgb(26,251,131,0.3)] text-white ease-out hover:translate-y-1 duration-[900ms,700ms] transition-all rounded cursor-pointer">
+              <button className="btn my-3 border-slate-600 bg-green-500 hover:bg-green-700 shadow-[0_5px_0_rgb(26,251,131,0.3)] hover:shadow-[0_1px_0px_rgb(26,251,131,0.3)] text-white ease-out hover:translate-y-1 duration-[900ms,700ms] transition-all rounded cursor-pointer">
                 Let's talk
               </button>
             </form>
