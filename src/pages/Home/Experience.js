@@ -8,7 +8,6 @@ import github from "../../assets/github.png";
 import tailwind from "../../assets/tailwind.png";
 import bootstrap from "../../assets/bootstrap.png";
 import daisy from "../../assets/daisy.png";
-import ml from "../../assets/ml.png";
 
 const Experience = () => {
   const techs = [

@@ -58,7 +58,7 @@ const Home = () => {
             </div>
             <div className="">
               <img
-                className="rounded-2xl mx-0 w-full md:my-0 md:mx-auto sm:w-3/4 md:w-2/3"
+                className="rounded-2xl mx-0 w-full md:my-0 md:mx-auto sm:w-3/4 md:w-2/3 hover:scale-125 duration-500"
                 src={img2}
                 alt=""
               />

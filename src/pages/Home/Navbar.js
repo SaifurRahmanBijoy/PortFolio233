@@ -34,7 +34,9 @@ const Navbar = () => {
   return (
     <div className="navbar flex justify-between items-center fixed px-8">
       <Link
-        to="/"
+        to="Home"
+        smooth
+        duration={800}
         className="cursor-pointer text-3xl lg:flex font-bold font-signature"
       >
         <span className="text-green-400">Saifur</span>
