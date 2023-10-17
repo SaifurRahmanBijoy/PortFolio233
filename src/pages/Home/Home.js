@@ -38,10 +38,10 @@ const Home = () => {
           <div className="md:min-h-screen py-20 md:py-0 w-7/12 max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
             <div className="flex justify-center items-center">
               <div className="my-5 md:my-0 flex flex-col justify-center">
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl inline-block">
+                <h1 className="text-xl text-white sm:text-xl md:text-2xl lg:text-4xl inline-block">
                   I'm a Front-end Web Developer
                 </h1>
-                <p className="text-sm sm:text-md lg:text-lg my-1 max-w-md">
+                <p className="text-sm sm:text-md text-white lg:text-lg my-1 max-w-md">
                   I hold a BSc in Computer Science and Engineering, offering a
                   strong educational foundation. Proficient in diverse front-end
                   technologies and MongoDB for back- end solutions.
