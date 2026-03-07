@@ -1,0 +1,66 @@
+[
+  {
+    "id": "01",
+    "name": "World of Geeks",
+    "live": "https://world-of-geeks.web.app/courses",
+    "img1": "https://i.ibb.co/7jK8gZ0/worldofgeeks1.png",
+    "img2": "https://i.ibb.co/kD1gvmh/worldofgeeks2.png",
+    "img3": "https://i.ibb.co/B6t5BjC/worldofgeeks3.png",
+    "img4": "https://i.ibb.co/X44mWF0/worldofgeeks4.png",
+    "features": [
+      "A user can select the quiz topic.",
+      "Responsive for mobile and desktop.",
+      "A user needs to be logged in for premium access.",
+      "An error is shown for,when the entered user email/password wrong.",
+      "Error: 404' is shown if the path is not appropriate.",
+      "Some frequently asked question answers are shown in the FAQ route."
+    ],
+    "client":"https://github.com/SaifurRahmanBijoy/world-of-geeks-a10-client",
+    "server":"https://github.com/SaifurRahmanBijoy/world-of-geeks-a10-server",
+    "tech": "Tailwind CSS, React Router DOM, Firebase, Google and Git sign in method, React to PDF, Vercel for server deploy."
+  },
+  {
+    "id": "02",
+    "name": "Photo Ink",
+    "live": "https://service-review1.web.app/",
+    "img1": "https://i.ibb.co/Kqstknh/sreview1.png",
+    "img2": "https://i.ibb.co/RpNLNZs/sreview2.png",
+    "img3": "https://i.ibb.co/59DNyY3/sreview4.png",
+    "img4": "https://i.ibb.co/Pg9gZ0W/sreview3.png",
+    "features": [
+      "An user can select,in which service they wanna review",
+      "Responsive for mobile and desktop.",
+      "If anyone wants to drop review they need to login first",
+      "An error is shown for,when the entered user email/password wrong.",
+      "Error: 404' is shown if the path is not appropriate.",
+      "Some frequently asked question answers are shown in the FAQ route.",
+      "If user is logged in,he/she can see the reviews dropped by himself/herself and also add services to the library."
+    ],
+    "client":"https://github.com/SaifurRahmanBijoy/service-review-a11-client",
+    "server":"https://github.com/SaifurRahmanBijoy/service-review-a11-server",
+    "tech": "Tailwind, React Router DOM, Firebase, Vercel, JWT"
+  },
+  {
+    "id": "03",
+    "name": "Wish Boat",
+    "live": "https://wish-boat.web.app/",
+    "img1": "https://i.ibb.co/1n2vrHH/wishboat3.png",
+    "img2": "https://i.ibb.co/v3jFCSb/wishboat1.png",
+    "img3": "https://i.ibb.co/q0rS5Nc/wishboat2.png",
+    "img4": "https://i.ibb.co/zH436WP/wishboat4.png",
+    "features": [
+      "This is a full-stack website for reselling and buying used electronics.",
+      "There is a dashboard which is dynamically changed when a buyer / seller / admin login.",
+      "Responsive for mobile and desktop.",
+      "A user needs to be logged in for purchasing an item",
+      "An error is shown for,when the entered user email/password wrong.",
+      "Error: 404' is shown if the path is not appropriate.",
+      "Some frequently asked question answers are shown in the BLOGS route.",
+      "Buyer can report an item to admin and an admin can delete that reported item.",
+      "Seller can add products for sale,advertise them,and also check whether his products are sold or available."
+    ],
+    "client":"https://github.com/SaifurRahmanBijoy/buy-sell-client",
+    "server":"https://github.com/SaifurRahmanBijoy/buy-sell-server",
+    "tech": "React Router, Firebase, Vercel, JWT, React Query, CRUD, MongoDB, Tailwind, Daisy UI, Stripe."
+  }
+]
