@@ -120,8 +120,16 @@ const Home = () => {
                 </div>
 
                 <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-                  I'm a <span className="text-[#6d28d9]">Full-stack</span> Web
-                  Developer
+                  I'm a{" "}
+                  <span
+                    className="bg-gradient-to-r from-violet-500 via-cyan-900 to-violet-500
+  bg-[length:300%_300%]
+  animate-[gradientMove_5s_ease_infinite]
+  bg-clip-text text-transparent"
+                  >
+                    Full-stack
+                  </span>{" "}
+                  Web Developer
                 </h1>
 
                 <p className="text-gray-400 text-sm md:text-base max-w-md hidden md:flex">
@@ -139,8 +147,8 @@ const Home = () => {
             </div>
 
             {/* IMAGE */}
-            <div className="relative group w-full sm:w-3/4 md:w-2/3 lg:w-[85%] overflow-hidden rounded-xl">
-              <div className="rotating-border absolute -inset-2 rounded-3xl" />
+            <div className="relative group w-full sm:w-3/4 md:w-2/3 lg:w-[85%] rounded-xl">
+              <div className="rotating-border absolute -inset-1 rounded-xl" />
 
               <img
                 src={img2}
@@ -195,7 +203,7 @@ const Home = () => {
           <Contact />
         </div>
 
-        <div className="w-7/12 mx-auto">
+        <div className="w- mx-auto">
           <Footer />
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { SiGithub, SiInstagram, SiWhatsapp } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
 
 const Footer = () => {
@@ -58,16 +58,16 @@ const Footer = () => {
       href: "https://www.instagram.com/bi_j_oy/",
       style: "bg-pink-700",
     },
-    {
-      id: 6,
-      child: (
-        <>
-          Mail <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:saifur.rahman6810@gmail.com",
-      style: "bg-gray-700",
-    },
+    // {
+    //   id: 6,
+    //   child: (
+    //     <>
+    //       Mail <HiOutlineMail size={30} />
+    //     </>
+    //   ),
+    //   href: "mailto:saifur.rahman6810@gmail.com",
+    //   style: "bg-gray-700",
+    // },
     {
       id: 7,
       child: (
@@ -109,13 +109,13 @@ const Footer = () => {
       </div>
 
       {/* ================= FOOTER ================= */}
-      <div className="w-full text-white border-t border-slate-800 py-6 text-sm">
-        <div className="w-7/12 mx-auto flex flex-col items-center gap-6">
+      <div className="w-full text-white border-t border-slate-800 py-3 text-sm">
+        <div className=" mx-auto flex flex-col items-center gap-6">
           {/* NAME (TAILWIND GRADIENT ANIMATION) */}
           <div className="flex items-center gap-1 font-signature font-bold text-2xl">
             <span
               className="
-                bg-gradient-to-r from-violet-500 via-cyan-400 via-pink-500 to-violet-500
+                bg-gradient-to-r from-violet-500 via-cyan-400 to-violet-500
                 bg-[length:300%_300%]
                 animate-[gradientMove_5s_ease_infinite]
                 bg-clip-text text-transparent
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
 
           {/* MOBILE BUTTONS */}
-          <div className="flex md:hidden flex-wrap justify-center gap-3">
+          <div className="md:hidden grid grid-cols-2 gap-3">
             {links.map(({ id, child, href, style, download }) => (
               <a
                 key={id}
@@ -135,12 +135,13 @@ const Footer = () => {
                 download={download ? true : undefined}
                 target={download ? undefined : "_blank"}
                 rel="noreferrer"
-                className={`group relative flex items-center gap-2 px-3 py-2 rounded-md text-white overflow-hidden transition duration-300 hover:scale-105 ${style}`}
+                className={`group relative flex items-center justify-between w-full px-3 py-2 rounded-md text-white overflow-hidden transition duration-300 hover:scale-105 ${style}`}
               >
                 {/* glow */}
                 <span className="absolute inset-0 bg-gradient-to-r from-violet-500 via-cyan-400 to-pink-500 opacity-0 group-hover:opacity-20 blur-xl transition duration-300" />
 
-                <span className="relative flex items-center gap-2">
+                {/* content */}
+                <span className="relative flex items-center justify-between w-full">
                   {child}
                 </span>
               </a>

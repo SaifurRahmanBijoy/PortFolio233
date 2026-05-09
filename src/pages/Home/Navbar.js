@@ -58,7 +58,14 @@ const Navbar = () => {
         offset={-90}
         className="cursor-pointer text-3xl font-bold font-signature"
       >
-        <span className="text-[#6d28d9]">Saifur</span>
+        <span
+          className="bg-gradient-to-r from-violet-500 via-cyan-500 to-violet-500
+  bg-[length:300%_300%]
+  animate-[gradientMove_5s_ease_infinite]
+  bg-clip-text text-transparent"
+        >
+          Saifur
+        </span>
       </Link>
 
       {/* Desktop Menu */}
